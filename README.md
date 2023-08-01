@@ -9,11 +9,11 @@ https://department19.github.io/
 - Landing page banner
 	- Portrait
 - Main content sections
-	- About me
+	- About me :
 		A relatively brief biography of myself
-	- Projects
+	- Projects :
 		Consist of tile elements linking to the github repo for the website, all of my personal projects and the corresponding github repos and links to group projects I've worked on
-	- Contact
+	- Contact :
 		consider a forms element for an email? or maybe just a stylistic card layout of my lanes of contact?
 
 ### JS Elements
