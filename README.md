@@ -8,12 +8,15 @@ https://department19.github.io/
 - Navigation bar/pane
 - Landing page banner
 	- Portrait
+	- List of languages I can use and currently learning
 - Main content sections
-	- About me :
+	- About me:
 		A relatively brief biography of myself
-	- Projects :
+	- Projects:
 		Consist of tile elements linking to the github repo for the website, all of my personal projects and the corresponding github repos and links to group projects I've worked on
-	- Contact :
+	- Blog:
+		A log to make public notes of learning, but this isn't optimal in the current format?
+	- Contact:
 		consider a forms element for an email? or maybe just a stylistic card layout of my lanes of contact?
 
 ### JS Elements
