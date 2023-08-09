@@ -79,3 +79,7 @@ section {
 	scroll-snap-align: start;
 	height: 100vh;
 }
+
+section * {
+	outline: 1px dashed yellow;
+}
