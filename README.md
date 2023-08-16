@@ -34,5 +34,10 @@ https://department19.github.io/
 
 ## Development Log
 
+### Scroll snapping
+I had previously attempted to implement scroll snapping in a HTML document and I would run into the problem of it breaking the navigation bar scroll animation to the specific section when in use. After looking into it more, it seems that scroll snapping functions a lot better when the child content overflows the parent box and then you ensure each child element height correspond to the parent box height.
+A note should also be made that that `scroll-snap-stop: always;` needs to be used so that sections aren't skipped when for example swiping fast on a touch screen.
+
+
 ### Initial commits
 Laid out the general files for the website and plans on the structure and components of the website

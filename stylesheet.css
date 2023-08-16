@@ -74,10 +74,14 @@ main::-webkit-scrollbar-thumb {
 	background: var(--darkpurple);
 }
 
+/* Content section boxes */
+
 section {
 	outline: 1px dashed red;
 	scroll-snap-align: start;
+	scroll-snap-stop: always;
 	height: 100vh;
+	padding: 5rem 10rem;
 }
 
 section * {
