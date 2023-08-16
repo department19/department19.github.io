@@ -4,6 +4,7 @@
     text-decoration: 0;
     box-sizing: border-box;
     color: var(--txt1);
+	list-style: none;
 }
 
 :root {
@@ -53,6 +54,27 @@ h3 {
 
 p {
     font-size: 2rem;
+}
+
+li {
+	font-size: 2rem;
+}
+
+/* nav bar */
+
+#navbar {
+	position: sticky;
+	top: 0;
+}
+
+#navbar ul {
+	display: flex;
+	flex-direction: row;
+}
+
+#navbar ul li {
+	flex: 1;
+	text-align: center;
 }
 
 main {
