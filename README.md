@@ -34,6 +34,9 @@ https://department19.github.io/
 
 ## Development Log
 
+### Debugging scroll snapping, smooth scroll and navbar interaction
+when using scroll snapping, the `scroll-behaviour: smooth;` property has to be assigned to the parent of the scroll snap for it to work together
+
 ### Scroll snapping
 I had previously attempted to implement scroll snapping in a HTML document and I would run into the problem of it breaking the navigation bar scroll animation to the specific section when in use. After looking into it more, it seems that scroll snapping functions a lot better when the child content overflows the parent box and then you ensure each child element height correspond to the parent box height.
 But the problem of using the navigation to scroll to the element is still breaking, currently contemplating looking into using JS to either diable the scroll snap for the animation duration or to use the `.scrollIntoView` method.

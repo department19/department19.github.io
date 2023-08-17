@@ -78,6 +78,7 @@ li {
 }
 
 main {
+	scroll-behavior: smooth;
 	scroll-snap-type: y mandatory;
 	height: 100vh;
 	overflow-y: scroll;
