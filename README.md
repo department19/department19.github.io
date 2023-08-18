@@ -3,7 +3,8 @@
 https://department19.github.io/
 
 
-## Components to the website
+# Components to the website
+## Main Page
 ### UI Elements
 - Navigation bar/pane
 - Landing page banner
@@ -24,6 +25,9 @@ https://department19.github.io/
 - toggle for theme toggling
 - tracking for animation on scroll
 - tracking for mouse hover for tile animation
+
+## Gallery extension of projects section
+- implement a scrolling gallery containing my projects as tiles?
 
 ## Responsiveness considerations
 - ...
