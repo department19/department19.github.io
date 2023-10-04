@@ -13,7 +13,7 @@ https://department19.github.io/
 	- About me:
 		A relatively brief biography of myself
 	- Projects:
-		Consist of tile elements linking to the github repo for the website, all of my personal projects and the corresponding github repos and links to group projects I've worked on
+		Consist of card elements linking to the github repo for the website, all of my personal projects and the corresponding github repos and links to group projects I've worked on
 	- Blog:
 		A log to make public notes of learning, but this isn't optimal in the current format?
 	- Contact:

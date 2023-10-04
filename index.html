@@ -1,70 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Jack Lam</title>
 
-		<!-- fonts -->
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css?family=Lato"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css?family=Roboto+Mono"
-		/>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Jack Lam</title>
 
-		<link rel="stylesheet" href="stylesheets/stylesheet.css" />
-		<script defer src="app.js"></script>
-	</head>
-	<body>
-		<nav id="navbar">
-			<ul>
-				<li><a href="">Home</a></li>
-				<li><a href="">About Me</a></li>
-				<li><a href="">Projects</a></li>
-				<li><a href="">Blog</a></li>
-				<li><a href="">Contact</a></li>
-			</ul>
-		</nav>
-		<header></header>
-		<main>
-			<section>
-				<h1>Home</h1>
-			</section>
-			<section>
-				<h2>About Me</h2>
-				<p>
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-					Accusamus mollitia iste aliquam. Voluptate culpa vero
-					mollitia! Odio, blanditiis. Cum asperiores ad sint fugit
-					reiciendis vitae, ipsum vel omnis architecto ratione.
-				</p>
-			</section>
-			<section>
-				<h2>Projects</h2>
-				<p>here is a list of current and past projects</p>
-				<div class="project-tile-box">
-					<article class="project-tile">
-						<a href="">
-							<div class="project-image-box">
-								<img src="assets/web_icon.png" alt="">
-							</div>
-							<div class="project-description">
-								<p>The repository of this website</p>
-							</div>
-							<div class="project-button-box"></div>
-						</a>
-					</article>
-				</div>
-			</section>
-			<section>
-				<h2>Blog</h2>
-			</section>
-			<section>
-				<h2>Contact</h2>
-			</section>
-		</main>
-	</body>
+	<!-- fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono" />
+
+	<link rel="stylesheet" href="stylesheets/stylesheet.css" />
+	<link rel="stylesheet" href="stylesheets/basic_card.css">
+	<script defer src="app.js"></script>
+</head>
+
+<body>
+	<nav id="navbar">
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">About Me</a></li>
+			<li><a href="">Projects</a></li>
+			<li><a href="">Blog</a></li>
+			<li><a href="">Contact</a></li>
+		</ul>
+	</nav>
+	<header></header>
+	<main>
+		<section>
+			<h1>Home</h1>
+		</section>
+		<section>
+			<h2>About Me</h2>
+			<p>
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+				Accusamus mollitia iste aliquam. Voluptate culpa vero
+				mollitia! Odio, blanditiis. Cum asperiores ad sint fugit
+				reiciendis vitae, ipsum vel omnis architecto ratione.
+			</p>
+		</section>
+		<section>
+			<h2>Projects</h2>
+			<p>here is a list of current and past projects</p>
+			<div class="project-card-box">
+				<article class="project-card, card">
+					<a href="">
+						<div class="project-image-box, card-header">
+							<img src="assets/web_icon.png" alt="">
+						</div>
+						<div class="card-body">
+							<h2 class="card-title">Card Title</h2>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo.</p>
+							<a href="#" class="btn">Read More</a>
+						</div>
+					</a>
+				</article>
+			</div>
+		</section>
+		<section>
+			<h2>Blog</h2>
+		</section>
+		<section>
+			<h2>Contact</h2>
+		</section>
+	</main>
+</body>
+
 </html>

@@ -87,3 +87,12 @@ section {
 section * {
 	outline: 1px dashed yellow;
 }
+
+/* Project cards */
+
+.project-card-box {
+	outline: 1px dashed green;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
