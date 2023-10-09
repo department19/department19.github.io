@@ -6,8 +6,12 @@ https://department19.github.io/
 
 short description here?
 
-- [Components](#components-to-the-website)
-## Components to the website
+- [Components](#website-components)
+- [Responsiveness](#responsiveness-considerations)
+- [Bugs](#bugs)
+- [Development Log](#development-log)
+
+## Website components
 ### UI Elements
 - Navigation bar/pane (scrollspy?? check your bookmarks!)
 - Landing page banner
