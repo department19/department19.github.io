@@ -1,11 +1,13 @@
 # Welcome to my portfolio website
 
+put a cute icon / picture here!
+
 https://department19.github.io/
 
-
+short description here?
 ## Components to the website
 ### UI Elements
-- Navigation bar/pane
+- Navigation bar/pane (scrollspy?? check your bookmarks!)
 - Landing page banner
 	- Portrait
 	- List of languages I can use and currently learning
@@ -13,9 +15,10 @@ https://department19.github.io/
 	- About me:
 		A relatively brief biography of myself
 	- Projects:
-		Consist of card elements linking to the github repo for the website, all of my personal projects and the corresponding github repos and links to group projects I've worked on
+		Consist of card elements linking to the github repo for the website, all of my personal projects and the corresponding github repos and links to group projects I've worked on.
 	- Blog:
 		A log to make public notes of learning, but this isn't optimal in the current format?
+		Would need a DB to be fully functional? consider embedding something external?
 	- Contact:
 		consider a forms element for an email? or maybe just a stylistic card layout of my lanes of contact?
 
@@ -23,8 +26,7 @@ https://department19.github.io/
 - toggling for navigation bar/panel and animation
 - toggle for theme toggling
 - tracking for animation on scroll
-- tracking for mouse hover for tile animation
-
+- tracking for mouse hover for card animation in the project and contact sections
 ## Responsiveness considerations
 - ...
 
@@ -33,7 +35,15 @@ https://department19.github.io/
 
 
 ## Development Log
-### Tiles
+
+### Animate on scroll
+The previous iteration of the website used `intersectObserver` to track whether elements were visible. a problem this posed was elements would start loading in immediately when a single pixel was visible on the browser. This result in either the animation not being seen, or it'd be part way during the scroll. The immediate solution at the time was to put a delay on the transitions, but that would result in the webpage feeling a little slow and clunky.
+
+I have applied the same format to the current iteration for now, but currently looking into whether the use of `getBoundingClientRect` or looking into some of the sub properties of `intersectObserver` can be used to rectify this.
+
+### Project card
+In my previous iteration of my portfolio, I used a tile that would expand, which would show the title and description of the project. The problem I had with this was the animations and transform transitions would conflict with the initial fade in animation I had in place blanketed on the website.
+For now I have pieced together a very simple card element as a place holder until I have a better idea of what I want it to be structure and look like.
 
 ### Scroll snapping
 I had previously attempted to implement scroll snapping in a HTML document and I would run into the problem of it breaking the navigation bar scroll animation to the specific section when in use. After looking into it more, it seems that scroll snapping functions a lot better when the child content overflows the parent box and then you ensure each child element height correspond to the parent box height.
