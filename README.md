@@ -6,7 +6,7 @@ https://department19.github.io/
 
 short description here?
 
-- [Components](##components-to-website)
+- [Components](#components-to-the-website)
 ## Components to the website
 ### UI Elements
 - Navigation bar/pane (scrollspy?? check your bookmarks!)
