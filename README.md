@@ -54,7 +54,11 @@ The previous iteration of the website used `intersectObserver` to track whether 
 I have applied the same format to the current iteration for now, but currently looking into whether the use of `getBoundingClientRect` or looking into some of the sub properties of `intersectObserver` can be used to rectify this.
 
 ### Project card
-In my previous iteration of my portfolio, I used a tile that would expand, which would show the title and description of the project. The problem I had with this was the animations and transform transitions would conflict with the initial fade in animation I had in place blanketed on the website.
+#### 0.2
+
+
+#### 0.1
+In my previous iteration of my portfolio page, I used a tile that would expand, which would show the title and description of the project. The problem I had with this was the animations and transform transitions would conflict with the initial fade in animation I had in place blanketed on the website.
 For now I have pieced together a very simple card element as a place holder until I have a better idea of what I want it to be structure and look like.
 
 ### Scroll snapping

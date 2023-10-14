@@ -43,10 +43,8 @@ document.addEventListener("DOMContentLoaded", function() {
     component.forEach((part) => {
       if (part.isIntersecting) {
         part.target.classList.add("active");
-        // part.target.classList.remove("init-animate");
       } else {
         part.target.classList.remove("active");
-        // part.target.classList.add("init-animate");
       }
     });
   });
