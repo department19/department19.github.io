@@ -41,8 +41,14 @@ short description here?
 
 
 ## Development Log
+- [Animate on scroll](#Animate-on-scroll)
+
+
 
 ### Animate on scroll
+#### 0.2
+Had problems where using the `@keyframes` method of animation would have the animation play out and then the elements would go back to `opacity: 0;` and therefore disappearing. This was because the animation would play out then reset to it's start state, where I on the other hand want it to finish at it's end state. I have to use `animation-fill-mode: forwards;` to ensure the animation holds in it's end state.
+#### 0.1
 The previous iteration of the website used `intersectObserver` to track whether elements were visible. a problem this posed was elements would start loading in immediately when a single pixel was visible on the browser. This result in either the animation not being seen, or it'd be part way during the scroll. The immediate solution at the time was to put a delay on the transitions, but that would result in the webpage feeling a little slow and clunky.
 
 I have applied the same format to the current iteration for now, but currently looking into whether the use of `getBoundingClientRect` or looking into some of the sub properties of `intersectObserver` can be used to rectify this.
