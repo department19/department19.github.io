@@ -31,7 +31,7 @@ short description here?
 ### JS Elements
 - toggling for navigation bar/panel and animation
 - toggle for theme toggling
-- tracking for animation on scroll
+- tracking for animation on scroll - partial
 - tracking for mouse hover for card animation in the project and contact sections
 ## Responsiveness considerations
 - ...
@@ -55,7 +55,10 @@ I have applied the same format to the current iteration for now, but currently l
 
 ### Project card
 #### 0.2
-
+Did a touch up on how the project card would look like in terms of colouring and, added:
+- box shadow
+- hover glow affect
+- border radius
 
 #### 0.1
 In my previous iteration of my portfolio page, I used a tile that would expand, which would show the title and description of the project. The problem I had with this was the animations and transform transitions would conflict with the initial fade in animation I had in place blanketed on the website.
