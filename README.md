@@ -59,7 +59,11 @@ Did a touch up on how the project card would look like in terms of colouring and
 - box shadow
 - hover glow affect
 - border radius
-
+At present there is a bug that seems to render only in chrome where it'll creates separate `a` elements on the top and bottom half of the card
+<img src="assets/readme/Pasted_image_20231018164846.png"/>
+whereas the source html is structured as such
+<img src="assets/readme/Pasted_image_20231018165448.png"/>
+which causes problems when attempting to use flexbox to position the elements.
 #### 0.1
 In my previous iteration of my portfolio page, I used a tile that would expand, which would show the title and description of the project. The problem I had with this was the animations and transform transitions would conflict with the initial fade in animation I had in place blanketed on the website.
 For now I have pieced together a very simple card element as a place holder until I have a better idea of what I want it to be structure and look like.

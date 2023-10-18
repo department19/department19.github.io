@@ -17,6 +17,10 @@ body {
 .card {
     max-width: 300px;
     background-color: var(--dark3);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-content: center; */
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     box-shadow: 
         0 0 0 1px #000,
@@ -36,18 +40,6 @@ body {
         inset 0 1px 1px rgba(255,255,255,.1),
         0px 20px 48px 5px rgba(132,237,193,0.4);
 }
-
-/* .card::after
- {
-    content: "";
-    position: absolute;
-    inset: -1px;
-    transform: translate(1px, 1px);
-    z-index: -1;
-    background: linear-gradient(180deg, rgba(120, 117, 255, 0.1) 0%, #84edc1 88.02%);
-    filter: blur(24px);
-    opacity: 0.1;
-} */
 
 .card-header {
     overflow: hidden;
