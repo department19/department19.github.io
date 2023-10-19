@@ -1,0 +1,28 @@
+nav {
+    position: fixed;
+    left: 100px;
+    height: 70%;
+}
+
+nav::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: var(--dark4);
+    width: 2px;
+    height: 100%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    list-style-position: inside;
+}
+
+.nav-item {
+    position: relative;
+}

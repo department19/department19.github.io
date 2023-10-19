@@ -45,6 +45,14 @@ short description here?
 - [Animate on scroll](#Animate-on-scroll)
 - [Project cards](#project-cards)
 
+### Navigation bar
+
+#### 0.1
+- used `::before` on nav to create a line element for the list items to sit on
+- `list-style-position` to move marker on to `::before` line
+- adjusted padding of main sections to make space for side navigation bar
+- used flexbox to position main content in center to align with the nav bar
+
 ### Animate on scroll
 #### 0.2
 Had problems where using the `@keyframes` method of animation would have the animation play out and then the elements would go back to `opacity: 0;` and therefore disappearing. 

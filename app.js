@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
   //   Navbar functionality
-  const navBar = document.getElementById("navbar");
+  // const navBar = document.getElementById("navbar");
 
-  function togglenavbar() {
-    navBar.classList.toggle("nav-active");
-  }
+  // function togglenavbar() {
+  //   navBar.classList.toggle("nav-active");
+  // }
 
 
   // initial animation
-  const allElements = document.querySelectorAll("section > *");
+  const allElements = document.querySelectorAll("section > *, nav");
 
   function prepAnimation() {
     allElements.forEach((element) => {

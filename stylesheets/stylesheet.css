@@ -78,10 +78,13 @@ main::-webkit-scrollbar-thumb {
 
 section {
 	/* outline: 1px dashed red; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	scroll-snap-align: start;
 	scroll-snap-stop: always;
 	height: 100vh;
-	padding: 5rem 10rem;
+	padding: 5rem 40rem;
 }
 
 section * {
