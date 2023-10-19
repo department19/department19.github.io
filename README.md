@@ -42,7 +42,8 @@ short description here?
 - magical anchor elements appearing in chrome for the project cards
 
 ## Development Log
-- [Animate on scroll](#Animate-on-scroll)
+- [Navigation bar](#navigation-bar)
+- [Animate on scroll](#animate-on-scroll)
 - [Project cards](#project-cards)
 
 ### Navigation bar
