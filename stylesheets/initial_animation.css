@@ -1,16 +1,21 @@
+:root {
+    --animation-curve: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
 .init-animate {
     opacity: 0;
 }
 
 .init-animate.active {
-    animation: fade-in 2s cubic-bezier(0.16, 1, 0.3, 1);
-    opacity: 1;
+    animation: fade-in 0.6s 0.3s var(--animation-curve);
+    animation-fill-mode: forwards;
+    /* opacity: 1; */
 }
 
 @keyframes fade-in {
     0% {
         opacity: 0;
-        transform: translateX(-50px);
+        transform: translateX(-15px);
     }
     100% {
         opacity: 1;

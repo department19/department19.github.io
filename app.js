@@ -18,41 +18,38 @@ document.addEventListener("DOMContentLoaded", function() {
 
   prepAnimation();
 
-  function triggerAnimation() {
-    console.log("trigger");
-    allElements.forEach(element => {
-      let triggerThreshold = 150;
-      let windowHeight = window.innerHeight;
-      // let elementTop = element.getBoundingClientRect();
-      // console.log(elementTop);
-      
-      if (elementTop < windowHeight - triggerThreshold) {
-        element.classList.add("active");
-      } else {
-        element.classList.remove("active");
-      }
-    });
-  }
+  // function triggerAnimation() {
+  //   console.log("trigger");
+  //   allElements.forEach((element) => {
+  //     let triggerThreshold = 150;
+  //     let windowHeight = window.innerHeight;
+  //     // let elementTop = element.getBoundingClientRect();
+  //     // console.log(elementTop);
 
-  window.addEventListener("scroll", function() {
-    triggerAnimation();
-  });
+  //     if (elementTop < windowHeight - triggerThreshold) {
+  //       element.classList.add("active");
+  //     } else {
+  //       element.classList.remove("active");
+  //     }
+  //   });
+  // }
 
-  const scrollObserver = new IntersectionObserver ((component) => {
+  // window.addEventListener("scroll", function() {
+  //   triggerAnimation();
+  // });
+
+  const scrollObserver = new IntersectionObserver((component) => {
     console.log(component);
     component.forEach((part) => {
       if (part.isIntersecting) {
         part.target.classList.add("active");
-        // part.target.classList.remove("init-animate");
       } else {
         part.target.classList.remove("active");
-        // part.target.classList.add("init-animate");
       }
     });
   });
 
-  allElements.forEach(element => {
+  allElements.forEach((element) => {
     scrollObserver.observe(element);
   });
-
 });
