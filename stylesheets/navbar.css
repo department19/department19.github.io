@@ -1,7 +1,8 @@
-nav {
+#navbar {
     position: fixed;
     left: 100px;
     height: 70%;
+    animation-delay: 1s;
 }
 
 nav::before {
