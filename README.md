@@ -35,7 +35,7 @@ short description here?
 - tracking for mouse hover for card animation in the project and contact sections
 - A vanilla JS scrollspy function for webpage navigation
 ## Responsiveness considerations
-- ...
+- The overflow of the sections on smaller than 1080p screen sizes results in bleeding of the content on to the adjacent ones. need to consider using at @media rules or maybe even JS to determine the screen size then adjust content size accordingly
 
 
 ## Bugs
