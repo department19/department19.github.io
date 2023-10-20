@@ -49,10 +49,12 @@ short description here?
 ### Navigation bar
 
 #### 0.1
+<img src="assets/readme/Pasted_image_20231019134626.png">
 - used `::before` on nav to create a line element for the list items to sit on
 - `list-style-position` to move marker on to `::before` line
 - adjusted padding of main sections to make space for side navigation bar
 - used flexbox to position main content in center to align with the nav bar
+- added fade in animation to the navbar too
 
 ### Animate on scroll
 #### 0.2
