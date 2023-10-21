@@ -7,31 +7,33 @@
 	<title>Jack Lam</title>
 
 	<!-- fonts -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
 
-	<link rel="stylesheet" href="stylesheets/stylesheet.css" />
+	<!-- Stylesheets and JS -->
+	<link rel="stylesheet" href="stylesheets/stylesheet.css">
 	<link rel="stylesheet" href="stylesheets/basic_card.css">
 	<link rel="stylesheet" href="stylesheets/initial_animation.css">
+	<link rel="stylesheet" href="stylesheets/navbar.css">
 	<script defer src="app.js"></script>
 </head>
 
 <body>
 	<nav id="navbar">
 		<ul>
-			<li><a href="">Home</a></li>
-			<li><a href="">About Me</a></li>
-			<li><a href="">Projects</a></li>
-			<li><a href="">Blog</a></li>
-			<li><a href="">Contact</a></li>
+			<li class="nav-item active"><a href="#home">Home</a></li>
+			<li class="nav-item"><a href="#about-me">About Me</a></li>
+			<li class="nav-item"><a href="#projects">Projects</a></li>
+			<li class="nav-item"><a href="#blog">Blog</a></li>
+			<li class="nav-item"><a href="#contact">Contact</a></li>
 		</ul>
 	</nav>
 	<header></header>
 	<main>
-		<section>
-			<h1>Home</h1>
+		<section id="home">
+			<h1>Jack Lam</h1>
 		</section>
-		<section>
+		<section id="about-me">
 			<h2>About Me</h2>
 			<p>
 				Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -53,22 +55,22 @@
 				voluptatem minus eos mollitia facilis quas odit provident, quo, obcaecati quidem reiciendis est. Velit,
 				qui repellat.</p>
 		</section>
-		<section>
+		<section id="projects">
 			<h2>Projects</h2>
 			<p>here is a list of current and past projects</p>
 			<div class="project-card-box">
 				<!-- <a href=""> -->
-					<article class="project-card, card">
-						<div class="project-image-box, card-header">
-							<img src="assets/web_icon.png" alt="">
-						</div>
-						<div class="card-body">
-							<h2 class="card-title">Card Title</h2>
-							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in
-								justo.</p>
-							<a href="#" class="btn">Read More</a>
-						</div>
-					</article>
+				<article class="project-card, card">
+					<div class="project-image-box, card-header">
+						<img src="assets/web_icon.png" alt="">
+					</div>
+					<div class="card-body">
+						<h2 class="card-title">Card Title</h2>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in
+							justo.</p>
+						<a href="#" class="btn">Read More</a>
+					</div>
+				</article>
 				<!-- </a> -->
 				<article class="project-card, card">
 					<div class="project-image-box, card-header">
@@ -109,11 +111,15 @@
 				</article>
 			</div>
 		</section>
-		<section>
+		<section id="blog">
 			<h2>Blog</h2>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum dignissimos obcaecati fugiat numquam eos, rerum dolores perspiciatis quis voluptates, accusantium hic tempore eveniet, aliquid nulla ea ex repudiandae quam sunt.</p>
 		</section>
-		<section>
+		<section id="contact">
 			<h2>Contact</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum perspiciatis nemo voluptatem illum
+				tempora vel ipsa quos officiis repellat a quas, sed impedit praesentium odit deleniti eius perferendis
+				cumque modi.</p>
 		</section>
 	</main>
 </body>
