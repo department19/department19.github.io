@@ -3,7 +3,7 @@
 	padding: 0;
 	text-decoration: 0;
 	box-sizing: border-box;
-	color: var(--light1);
+	/* color: var(--light1); */
 }
 
 :root {
@@ -31,6 +31,7 @@
 
 html {
 	scroll-behavior: smooth;
+	color: var(--light1);
 }
 
 body {
@@ -38,7 +39,7 @@ body {
 	overflow-y: hidden;
 }
 
-/* Standard sizing */
+/* Standardise */
 h1 {
 	font-size: 5rem;
 }
@@ -59,6 +60,11 @@ main {
 	scroll-snap-type: y mandatory;
 	height: 100vh;
 	overflow-y: scroll;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
 }
 
 /* these scrollbar features may not be fully supported yet */
@@ -88,7 +94,7 @@ section {
 }
 
 section > * {
-	outline: 1px dashed yellow;
+	/* outline: 1px dashed yellow; */
 }
 
 /* Project cards */
@@ -99,5 +105,5 @@ section > * {
 	justify-content: space-between;
 	align-items: center;
 	gap: 1rem;
-	overflow: hidden;
+	/* overflow: hidden; this is temporarily in place for smaller screens */
 }
