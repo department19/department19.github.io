@@ -51,6 +51,7 @@ short description here?
 #### 0.3
 - added `intersectionObserver` tracking to the navbar for scrollspy 
 - JS addition and removal of "active" class on navbar anchors to allow for the css animation of scrollspy functionality
+- added some animation to the navbar light up
 #### 0.2
 <img src="assets/readme/unknown_2023.10.21-01.08.gif">
 - the `::marker` elements we not easy to manipulate to fit the aesthetic I want for the nav bar so they were removed and replaced with a `::before` element.
