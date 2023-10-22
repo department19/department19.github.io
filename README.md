@@ -49,16 +49,20 @@ short description here?
 
 ### Navigation bar
 #### 0.3
+<img src="assets/readme/unknown_2023.10.22-06.52.gif">
+
 - added `intersectionObserver` tracking to the navbar for scrollspy 
 - JS addition and removal of "active" class on navbar anchors to allow for the css animation of scrollspy functionality
 - added some animation to the navbar light up
 #### 0.2
 <img src="assets/readme/unknown_2023.10.21-01.08.gif">
+
 - the `::marker` elements we not easy to manipulate to fit the aesthetic I want for the nav bar so they were removed and replaced with a `::before` element.
 - with the new `::before` element `vertical-align` can be uses to make it central
 - changed up how the colour of text was assigned allowing better selection with the nav items
 #### 0.1
 <img src="assets/readme/Pasted_image_20231019134626.png">
+
 - used `::before` on nav to create a line element for the list items to sit on
 - `list-style-position` to move marker on to `::before` line
 - adjusted padding of main sections to make space for side navigation bar
