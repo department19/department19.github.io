@@ -2,8 +2,6 @@
 
 put a cute icon / picture here!
 
-https://department19.github.io/
-
 short description here?
 
 - [Components](#website-components)

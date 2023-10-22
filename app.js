@@ -54,4 +54,13 @@ document.addEventListener("DOMContentLoaded", function() {
   allElements.forEach((element) => {
     scrollObserver.observe(element);
   });
+
+  // Link open in new tab
+
+  // function setTargetBlank() {
+  //   const allAnchors = Array.from(document.querySelectorAll("a"));
+  //   console.log(allAnchors);
+  // }
+
+  // setTargetBlank();
 });
