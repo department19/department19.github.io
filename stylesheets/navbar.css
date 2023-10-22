@@ -49,6 +49,15 @@ nav ul {
     margin-right: 1rem;
 }
 
-.nav-item.active {
+.nav-item a.active {
     color: var(--light1);
+}
+
+@keyframes nav-light {
+    0% {
+        color: var(--dark1);
+    }
+    100% {
+        color: var(--light1);
+    }
 }
