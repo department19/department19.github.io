@@ -9,7 +9,6 @@
 .init-animate.active {
     animation: fade-in 0.6s 0.3s var(--animation-curve);
     animation-fill-mode: forwards;
-    /* opacity: 1; */
 }
 
 @keyframes fade-in {

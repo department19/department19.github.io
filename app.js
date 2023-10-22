@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   //   Navbar Scrollspy
-  const navBarArray = Array.from(document.querySelectorAll(`#navbar ul li a`));
+  const navBarArray = Array.from(document.querySelectorAll(`#navbar ul li a`)); // need to use Array.form to change from nodelist to array
   const section = document.querySelectorAll("section");
 
   const scrollSpyOption = {
@@ -9,12 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const scrollSpyAdd = new IntersectionObserver((component) => {
     component.forEach((part) => {
-      // console.log(part.target);
-      console.log(navBarArray);
       const currentSection = document.querySelector(`.nav-item a[href='#${part.target.id}']`);
-      // console.log(currentSection);
       const notCurrentSection = navBarArray.filter((item) => item !== currentSection);
-      console.log(notCurrentSection);
       if (part.isIntersecting) {
         notCurrentSection.forEach((element) => {
           element.classList.remove("active");
@@ -47,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const scrollObserver = new IntersectionObserver((component) => {
     component.forEach((part) => {
-      // console.log(part.target);
       if (part.isIntersecting) {
         part.target.classList.add("active");
       } else {
