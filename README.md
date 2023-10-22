@@ -60,6 +60,7 @@ short description here?
 - the `::marker` elements we not easy to manipulate to fit the aesthetic I want for the nav bar so they were removed and replaced with a `::before` element.
 - with the new `::before` element `vertical-align` can be uses to make it central
 - changed up how the colour of text was assigned allowing better selection with the nav items
+- added linear gradient to the navbar line
 #### 0.1
 <img src="assets/readme/Pasted_image_20231019134626.png">
 
