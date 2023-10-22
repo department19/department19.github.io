@@ -42,10 +42,16 @@ short description here?
 - magical anchor elements appearing in chrome for the project cards
 
 ## Development Log
+- [Landing Page](#landing-page)
 - [Navigation bar](#navigation-bar)
 - [Animate on scroll](#animate-on-scroll)
 - [Project cards](#project-cards)
 - [Scroll snapping](#scroll-snapping)
+
+### Landing Page
+
+#### 0.1
+added a portrait with linear gradient to banner and basic elements for the language icon tiles
 
 ### Navigation bar
 #### 0.3
