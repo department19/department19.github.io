@@ -1,0 +1,9 @@
+#home {
+    background: 
+    linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, var(--dark1) 100%),
+    linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, var(--dark1) 100%),
+    url(../assets/portrait2.jpg);
+    background-size: 50%;
+    background-position: right;
+    background-repeat: no-repeat;
+}
