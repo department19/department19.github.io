@@ -48,15 +48,21 @@ short description here?
 - [Scroll snapping](#scroll-snapping)
 
 ### Navigation bar
+#### 0.3
+<img src="assets/readme/unknown_2023.10.22-06.52.gif">
 
+- added `intersectionObserver` tracking to the navbar for scrollspy 
+- JS addition and removal of "active" class on navbar anchors to allow for the css animation of scrollspy functionality
+- added some animation to the navbar light up
 #### 0.2
 <img src="assets/readme/unknown_2023.10.21-01.08.gif">
+
 - the `::marker` elements we not easy to manipulate to fit the aesthetic I want for the nav bar so they were removed and replaced with a `::before` element.
 - with the new `::before` element `vertical-align` can be uses to make it central
 - changed up how the colour of text was assigned allowing better selection with the nav items
-
 #### 0.1
 <img src="assets/readme/Pasted_image_20231019134626.png">
+
 - used `::before` on nav to create a line element for the list items to sit on
 - `list-style-position` to move marker on to `::before` line
 - adjusted padding of main sections to make space for side navigation bar
@@ -65,6 +71,8 @@ short description here?
 - added "active" css in place for the JS to be implemented now
 
 ### Animate on scroll
+#### 0.3
+Added intersect observer `threshold: 1` option allowing better control of when the element appears (when it is fully visible rather than immediately from 1px)
 #### 0.2
 Had problems where using the `@keyframes` method of animation would have the animation play out and then the elements would go back to `opacity: 0;` and therefore disappearing. 
 This was because the animation would play out then reset to it's start state, where I on the other hand want it to finish at it's end state. I have to use `animation-fill-mode: forwards;` to ensure the animation holds in it's end state.

@@ -1,14 +1,37 @@
 document.addEventListener("DOMContentLoaded", function() {
-  //   Navbar functionality
-  // const navBar = document.getElementById("navbar");
+  //   Navbar Scrollspy
+  const navBarArray = Array.from(document.querySelectorAll(`#navbar ul li a`)); // need to use Array.form to change from nodelist to array
+  const section = document.querySelectorAll("section");
 
-  // function togglenavbar() {
-  //   navBar.classList.toggle("nav-active");
-  // }
+  const scrollSpyOption = {
+    threshold: 0.8,
+  };
 
+  const scrollSpyAdd = new IntersectionObserver((component) => {
+    component.forEach((part) => {
+      const currentSection = document.querySelector(`.nav-item a[href='#${part.target.id}']`);
+      const notCurrentSection = navBarArray.filter((item) => item !== currentSection);
+      if (part.isIntersecting) {
+        notCurrentSection.forEach((element) => {
+          element.classList.remove("active");
+        });
+        // console.log(currentSection);
+        currentSection.classList.add("active");
+      }
+    });
+  }, scrollSpyOption);
 
-  // initial animation
+  section.forEach((element) => {
+    scrollSpyAdd.observe(element);
+  });
+
+  // Animate on scroll
+
   const allElements = document.querySelectorAll("section > *, nav");
+
+  const aosOption = {
+    threshold: 1,
+  };
 
   function prepAnimation() {
     allElements.forEach((element) => {
@@ -18,28 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   prepAnimation();
 
-  // function triggerAnimation() {
-  //   console.log("trigger");
-  //   allElements.forEach((element) => {
-  //     let triggerThreshold = 150;
-  //     let windowHeight = window.innerHeight;
-  //     // let elementTop = element.getBoundingClientRect();
-  //     // console.log(elementTop);
-
-  //     if (elementTop < windowHeight - triggerThreshold) {
-  //       element.classList.add("active");
-  //     } else {
-  //       element.classList.remove("active");
-  //     }
-  //   });
-  // }
-
-  // window.addEventListener("scroll", function() {
-  //   triggerAnimation();
-  // });
-
   const scrollObserver = new IntersectionObserver((component) => {
-    console.log(component);
     component.forEach((part) => {
       if (part.isIntersecting) {
         part.target.classList.add("active");
@@ -47,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
         part.target.classList.remove("active");
       }
     });
-  });
+  }, aosOption);
 
   allElements.forEach((element) => {
     scrollObserver.observe(element);

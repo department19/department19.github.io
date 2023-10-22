@@ -9,7 +9,6 @@
 .init-animate.active {
     animation: fade-in 0.6s 0.3s var(--animation-curve);
     animation-fill-mode: forwards;
-    /* opacity: 1; */
 }
 
 @keyframes fade-in {
@@ -20,5 +19,14 @@
     100% {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
