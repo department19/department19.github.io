@@ -13,6 +13,7 @@
 	--dark2: #1b1b32;
 	--dark3: #2a2a40;
 	--dark4: #3b3b4f;
+	--dark50: #777785;
 	/* text and main highlight colour */
 	--light1: #ffffff;
 	--light2: #f5f6f7;
@@ -27,6 +28,10 @@
 	--darkblue: #002ead;
 	--green: #acd157;
 	--darkgreen: #00471b;
+	/* hover and animation */
+	--hover-glow: rgba(132,237,193,0.4);
+	/* standards */
+	--border-radius: 5px;
 }
 
 html {
@@ -41,19 +46,24 @@ body {
 
 /* Standardise */
 h1 {
-	font-size: 5rem;
+	font-size: 10rem;
+	font-family: Roboto Mono;
 }
 
 h2 {
 	font-size: 4rem;
+	font-family: Roboto Mono;
 }
 
 h3 {
-	font-size: 3rem;
+	font-size: 2rem;
+	font-family: Lato;
+	color: var(--dark50);
 }
 
 p {
 	font-size: 3rem;
+	font-family: Lato;
 }
 
 main {
@@ -65,6 +75,7 @@ main {
 a {
 	text-decoration: none;
 	color: inherit;
+	font-family: Roboto Mono;
 }
 
 /* these scrollbar features may not be fully supported yet */

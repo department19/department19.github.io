@@ -42,10 +42,16 @@ short description here?
 - magical anchor elements appearing in chrome for the project cards
 
 ## Development Log
+- [Landing Page](#landing-page)
 - [Navigation bar](#navigation-bar)
 - [Animate on scroll](#animate-on-scroll)
 - [Project cards](#project-cards)
 - [Scroll snapping](#scroll-snapping)
+
+### Landing Page
+
+#### 0.1
+added a portrait with linear gradient to banner and basic elements for the language icon tiles
 
 ### Navigation bar
 #### 0.3
@@ -60,6 +66,7 @@ short description here?
 - the `::marker` elements we not easy to manipulate to fit the aesthetic I want for the nav bar so they were removed and replaced with a `::before` element.
 - with the new `::before` element `vertical-align` can be uses to make it central
 - changed up how the colour of text was assigned allowing better selection with the nav items
+- added linear gradient to the navbar line
 #### 0.1
 <img src="assets/readme/Pasted_image_20231019134626.png">
 
