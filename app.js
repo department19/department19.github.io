@@ -1,13 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
   //   Navbar Scrollspy
   const navBarArray = Array.from(document.querySelectorAll(`#navbar ul li a`)); // need to use Array.form to change from nodelist to array
-  const section = document.querySelectorAll("section");
+  const sections = Array.from(document.querySelectorAll("section"));
+  const creditsSection = document.querySelector("#credits");
+  const filteredSections = sections.filter((item) => item !== creditsSection);
 
   const scrollSpyOption = {
     threshold: 0.8,
   };
 
-  const scrollSpyAdd = new IntersectionObserver((component) => {
+  const scrollSpy = new IntersectionObserver((component) => {
     component.forEach((part) => {
       const currentSection = document.querySelector(`.nav-item a[href='#${part.target.id}']`);
       const notCurrentSection = navBarArray.filter((item) => item !== currentSection);
@@ -15,14 +17,13 @@ document.addEventListener("DOMContentLoaded", function() {
         notCurrentSection.forEach((element) => {
           element.classList.remove("active");
         });
-        // console.log(currentSection);
         currentSection.classList.add("active");
       }
     });
   }, scrollSpyOption);
 
-  section.forEach((element) => {
-    scrollSpyAdd.observe(element);
+  filteredSections.forEach((element) => {
+    scrollSpy.observe(element);
   });
 
   // Animate on scroll
@@ -42,11 +43,11 @@ document.addEventListener("DOMContentLoaded", function() {
   prepAnimation();
 
   const scrollObserver = new IntersectionObserver((component) => {
-    component.forEach((part) => {
-      if (part.isIntersecting) {
-        part.target.classList.add("active");
+    component.forEach((element) => {
+      if (element.isIntersecting) {
+        element.target.classList.add("active");
       } else {
-        part.target.classList.remove("active");
+        element.target.classList.remove("active");
       }
     });
   }, aosOption);
@@ -55,12 +56,19 @@ document.addEventListener("DOMContentLoaded", function() {
     scrollObserver.observe(element);
   });
 
-  // Link open in new tab
+  // Force links to open in new tab
 
-  // function setTargetBlank() {
-  //   const allAnchors = Array.from(document.querySelectorAll("a"));
-  //   console.log(allAnchors);
-  // }
+  const allAnchors = Array.from(document.querySelectorAll("a"));
 
-  // setTargetBlank();
+  function setTargetBlank() {
+    let filteredAnchors;
+    allAnchors.forEach((element) => {
+      filteredAnchors = allAnchors.filter((item) => !navBarArray.includes(item));
+    });
+    filteredAnchors.forEach((element) => {
+      element.setAttribute("target", "_blank");
+    });
+  }
+
+  setTargetBlank();
 });
