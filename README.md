@@ -34,6 +34,7 @@ short description here?
 - A vanilla JS scrollspy function for webpage navigation
 ## Responsiveness considerations
 - The overflow of the sections on smaller than 1080p screen sizes results in bleeding of the content on to the adjacent ones. need to consider using at @media rules or maybe even JS to determine the screen size then adjust content size accordingly
+- nav bar needs a reposition to be able to be used on phones
 
 
 ## Bugs
@@ -48,16 +49,19 @@ short description here?
 
 ### Landing Page
 
-#### 0.1
-added a portrait with linear gradient to banner and basic elements for the language icon tiles
+#### 0.4
+added a portrait with linear gradient to banner and basic elements for the language icon tiles and added a credits section at the bottom for the icons and added JS code to apply `target=_blank` attribute to all anchor links but exclude the ones in the nav bar array with the `filter` and `setAttribute` methods
 
 ### Navigation bar
+#### 0.4
+added a filter for scrollspy to exclude the "credits" section to prevent the scrollspy function from throwing an error.
 #### 0.3
 <img src="assets/readme/unknown_2023.10.22-06.52.gif">
 
 - added `intersectionObserver` tracking to the navbar for scrollspy 
 - JS addition and removal of "active" class on navbar anchors to allow for the css animation of scrollspy functionality
 - added some animation to the navbar light up
+A note to be made here that the `filter` method can't utilise the `nodelist`  iterable created by `quesrySelector`. Considering this it is necessary to use `Array.from` to convert it to an array.
 #### 0.2
 <img src="assets/readme/unknown_2023.10.21-01.08.gif">
 
