@@ -62,8 +62,10 @@ h3 {
 }
 
 p {
-	font-size: 3rem;
+	font-size: 2.7rem;
 	font-family: Lato;
+	margin-bottom: 1rem;
+
 }
 
 main {
