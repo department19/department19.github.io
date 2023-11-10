@@ -65,19 +65,18 @@ p {
 	font-size: 2.7rem;
 	font-family: Lato;
 	margin-bottom: 1rem;
-
-}
-
-main {
-	scroll-snap-type: y mandatory;
-	height: 100vh;
-	overflow-y: scroll;
 }
 
 a {
 	text-decoration: none;
 	color: inherit;
 	font-family: Roboto Mono;
+}
+
+main {
+	scroll-snap-type: y mandatory;
+	height: 100vh;
+	overflow-y: scroll;
 }
 
 /* these scrollbar features may not be fully supported yet */
@@ -103,7 +102,9 @@ section {
 	scroll-snap-align: start;
 	scroll-snap-stop: always;
 	height: 100vh;
+	height: 100dvh;
 	padding: 5rem 30rem;
+	overflow-x: hidden;
 }
 
 section > * {
@@ -120,3 +121,54 @@ section > * {
 	gap: 1rem;
 	/* overflow: hidden; this is temporarily in place for smaller screens */
 }
+
+/* small screens */
+
+@media (max-width: 1280px) {
+	h1 {
+		font-size: 8rem;
+		font-family: Roboto Mono;
+	}
+	
+	h2 {
+		font-size: 3rem;
+		font-family: Roboto Mono;
+	}
+	
+	h3 {
+		font-size: 2rem;
+		font-family: Lato;
+		color: var(--dark50);
+	}
+	
+	p {
+		font-size: 2rem;
+		font-family: Lato;
+		margin-bottom: 1rem;
+	}
+}
+
+@media (max-width: 480px) {
+	h1 {
+		font-size: 8rem;
+		font-family: Roboto Mono;
+	}
+	
+	h2 {
+		font-size: 3rem;
+		font-family: Roboto Mono;
+	}
+	
+	h3 {
+		font-size: 2rem;
+		font-family: Lato;
+		color: var(--dark50);
+	}
+	
+	p {
+		font-size: 2rem;
+		font-family: Lato;
+		margin-bottom: 1rem;
+	}
+}
+
