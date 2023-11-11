@@ -122,9 +122,9 @@ section > * {
 	/* overflow: hidden; this is temporarily in place for smaller screens */
 }
 
-/* small screens */
+/* smaller screens */
 
-@media (max-width: 1280px) {
+@media (max-width: 1300px) {
 	h1 {
 		font-size: 8rem;
 		font-family: Roboto Mono;
@@ -146,7 +146,13 @@ section > * {
 		font-family: Lato;
 		margin-bottom: 1rem;
 	}
+
+	#icon-tile-box {
+		width: auto;
+	}
 }
+
+/* phones */
 
 @media (max-width: 480px) {
 	h1 {
