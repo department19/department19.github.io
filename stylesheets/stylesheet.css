@@ -170,37 +170,30 @@ section > * {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	gap: 1rem;
+	gap: 3.5rem;
 	/* overflow: hidden; this is temporarily in place for smaller screens */
 }
 
 /* smaller screens */
 
 @media (max-width: 1300px) {
-	h1 {
-		font-size: 8rem;
-		font-family: Roboto Mono;
+
+	:root {
+		font-size: 8px;
 	}
-	
-	h2 {
-		font-size: 3rem;
-		font-family: Roboto Mono;
-	}
-	
-	h3 {
-		font-size: 2rem;
-		font-family: Lato;
-		color: var(--dark50);
-	}
-	
+
 	p {
-		font-size: 2rem;
+		font-size: 2.5rem;
 		font-family: Lato;
 		margin-bottom: 1rem;
 	}
 
+	section {
+
+	}
+
 	#icon-tile-box {
-		width: auto;
+		width: 60%;
 	}
 }
 
