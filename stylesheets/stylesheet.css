@@ -224,7 +224,7 @@ section>* {
 @media (max-width: 480px) {
 
 	:root {
-		font-size: 8px;
+		font-size: 6px;
 	}
 
 	h1 {
@@ -285,5 +285,20 @@ section>* {
 
 	#icon-tile-box {
 		width: 90%;
+	}
+
+	#projects {
+		padding: 2rem;
+	}
+
+	.project-card-box {
+		gap: 1rem;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+
+	.card {
+		/* height: 10%; */
+		/* width: 30%; */
 	}
 }

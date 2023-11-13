@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const allElements = document.querySelectorAll("section > *, nav");
 
   const aosOption = {
-    threshold: 1,
+    threshold: 0.1,
   };
 
   function prepAnimation() {
