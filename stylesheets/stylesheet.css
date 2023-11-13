@@ -190,6 +190,7 @@ section>* {
 
 .project-card-box {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 	gap: 3.5rem;
@@ -370,7 +371,6 @@ section>* {
 
 	.project-card-box {
 		gap: 2rem;
-		flex-wrap: wrap;
 		justify-content: space-evenly;
 	}
 
