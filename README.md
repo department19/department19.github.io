@@ -39,16 +39,25 @@ short description here?
 
 ## Bugs
 - magical anchor elements appearing in chrome for the project cards
+- the text in the about me overflow the section on some phones, and for others trying to scroll to read the text triggers the scroll snap.
 
 ## Development Log
+- [Responsiveness](#responsiveness-adjustments)
 - [Landing Page](#landing-page)
 - [Navigation bar](#navigation-bar)
 - [Animate on scroll](#animate-on-scroll)
 - [Project cards](#project-cards)
 - [Scroll snapping](#scroll-snapping)
 
-### Landing Page
+### Responsiveness adjustments
+#### 0.1
+using @media rules adjusted the sizing of elements. I initially did this by manually changing the px numbers of certain elements, which was very inefficient and  required alot of repeat code, but since I used `rem` for a majority of the webpage, instead I was able to change `font-size` in the `:root` selector to change the size across the page.
 
+I consolidated some of the separated stylesheets of specific sections into the main stylesheet
+
+The format/positioning of elements of the landing page was completely changed and for phones and the projects section too.
+
+### Landing Page
 #### 0.4
 added a portrait with linear gradient to banner and basic elements for the language icon tiles and added a credits section at the bottom for the icons and added JS code to apply `target=_blank` attribute to all anchor links but exclude the ones in the nav bar array with the `filter` and `setAttribute` methods
 
