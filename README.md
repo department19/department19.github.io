@@ -101,7 +101,8 @@ I have applied the same format to the current iteration for now, but currently l
 
 ### Project cards
 #### 0.3
-Redid the project cards, removed the blanket flexbox on the card, centralised 
+Redid the project cards, removed the blanket flexbox on the card, centralised the images and bound the link buttons to the bottom of the card
+something to note is that, for an element with to sit at the bottom of a wrapper, the parent element should be given `position:relative` then the child can be given `postion:absolute` and `bottom:0` so that the child is bound to the bottom of the parent wrapper element.
 
 #### 0.2
 Did a touch up on how the project card would look like in terms of colouring and, added:
