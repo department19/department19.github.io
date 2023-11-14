@@ -111,7 +111,6 @@ section {
 	height: 100dvh;
 	padding: 5rem 30rem;
 	overflow-x: hidden;
-	/* background-color: var(--dark1); */
 }
 
 section>* {
@@ -203,11 +202,6 @@ section>* {
     max-width: 30rem;
 	height: 47rem;
     background-color: var(--dark3);
-    /* display: flex; */
-    flex-direction: column;
-	/* justify-content: space-between; */
-    flex-shrink: 0;
-	gap: 1rem;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     box-shadow: 
         0 0 0 1px #000,
@@ -257,7 +251,6 @@ section>* {
 	padding: 0 2rem;
 	margin-bottom: 2rem;
 	height: 4rem;
-	/* align-self: flex-end; */
 }
 
 .card-title {
@@ -267,7 +260,6 @@ section>* {
 .card-text {
     font-size: 1.5rem;
     color: var(--dark50);
-    /* margin-bottom: 2rem; */
 }
 
 .btn {
