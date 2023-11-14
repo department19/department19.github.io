@@ -1,6 +1,6 @@
 #navbar {
     position: fixed;
-    left: 100px;
+    left: 10rem;
     height: 70%;
     animation-delay: 1s;
 }
