@@ -100,6 +100,9 @@ The previous iteration of the website used `intersectObserver` to track whether 
 I have applied the same format to the current iteration for now, but currently looking into whether the use of `getBoundingClientRect` or looking into some of the sub properties of `intersectObserver` can be used to rectify this.
 
 ### Project cards
+#### 0.3
+Redid the project cards, removed the blanket flexbox on the card, centralised 
+
 #### 0.2
 Did a touch up on how the project card would look like in terms of colouring and, added:
 - box shadow

@@ -100,6 +100,7 @@ main::-webkit-scrollbar-thumb {
 /* Content section boxes */
 
 section {
+	position: relative;
 	/* outline: 1px dashed red; */
 	display: flex;
 	flex-direction: column;
@@ -110,7 +111,7 @@ section {
 	height: 100dvh;
 	padding: 5rem 30rem;
 	overflow-x: hidden;
-	background-color: var(--dark1);
+	/* background-color: var(--dark1); */
 }
 
 section>* {
@@ -198,15 +199,15 @@ section>* {
 }
 
 .card {
-    /* width: 30rem; */
+	position: relative;
     max-width: 30rem;
-    /* min-width: 25rem; */
+	height: 47rem;
     background-color: var(--dark3);
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
+	/* justify-content: space-between; */
     flex-shrink: 0;
-    /* justify-content: center; */
-    /* align-content: center; */
+	gap: 1rem;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     box-shadow: 
         0 0 0 1px #000,
@@ -228,38 +229,53 @@ section>* {
 }
 
 .card-header {
+	display: flex;
+	justify-content: center;
     overflow: hidden;
-    width: 80%;
-    padding-top: 10%;
-    /* display: flex; */
-    /* justify-content: center; */
+	align-self: center;
+	margin: 1rem 0 1rem;
 }
 
 .card-header img {
-    width: 100%;
+    width: 80%;
     height: auto;
+	align-self: center;
+
 }
 
 .card-body {
-    padding: 2rem;
+    padding: 0 2rem;
+}
+
+.button-box {
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	padding: 0 2rem;
+	margin-bottom: 2rem;
+	height: 4rem;
+	/* align-self: flex-end; */
 }
 
 .card-title {
     font-size: 2.4rem;
-    /* margin-bottom: 10px; */
 }
 
 .card-text {
-    font-size: 2rem;
-    color: #777;
-    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    color: var(--dark50);
+    /* margin-bottom: 2rem; */
 }
 
 .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
+	max-height: 4rem;
+    padding: 1rem 2rem;
+    background-color: var(--darkgreen);
+    color: var(--light4);
+	font-size: 1.5rem;
     text-decoration: none;
     border-radius: var(--border-radius);
     transition: background-color 0.3s ease-in-out;
