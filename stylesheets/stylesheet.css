@@ -241,6 +241,15 @@ section>* {
     padding: 0 2rem;
 }
 
+.card-title {
+	font-size: 2.4rem;
+}
+
+.card-text {
+	font-size: 1.5rem;
+    color: var(--dark50);
+}
+
 .button-box {
 	position: absolute;
 	bottom: 0;
@@ -253,15 +262,6 @@ section>* {
 	height: 4rem;
 }
 
-.card-title {
-    font-size: 2.4rem;
-}
-
-.card-text {
-    font-size: 1.5rem;
-    color: var(--dark50);
-}
-
 .btn {
 	max-height: 4rem;
     padding: 1rem 2rem;
@@ -270,11 +270,12 @@ section>* {
 	font-size: 1.5rem;
     text-decoration: none;
     border-radius: var(--border-radius);
-    transition: background-color 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color:var(--green);
+	color: var(--dark1);
 }
 
 /* smaller screens */
