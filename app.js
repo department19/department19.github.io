@@ -79,10 +79,19 @@ document.addEventListener("DOMContentLoaded", function() {
   if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     addAnimation();
   }
-  
+
   function addAnimation() {
     scroller.forEach((element) => {
       element.setAttribute("scroll-animate", true);
+      const projectCardBox = element.querySelector(".project-card-box");
+      const projectCard = Array.from(projectCardBox.children);
+      //  the array from stops the any updates in the DOM do not affect this array
+      projectCard.forEach((element) => {
+        const clonedElement = element.cloneNode(true);
+        clonedElement.setAttribute("aria-hidden", true);
+        // this prevents the content from showing up for a screen reader
+        projectCardBox.appendChild(clonedElement);
+      });
     });
   }
 });
