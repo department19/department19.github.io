@@ -204,7 +204,7 @@ section>* {
 	/* max-width: 140rem; */
 	/* max-width: ; */
 	max-height: 90vh;
-	padding-block: 2rem;
+	padding-block: 10rem;
 }
 
 .scroller[scroll-animate=true] {
