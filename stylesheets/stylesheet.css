@@ -323,12 +323,15 @@ section>* {
 .contact-grid {
 	display: grid;
 	grid-template-columns: 1fr 3fr;
-	grid-template-rows: 20rem 20rem;
-	gap: 1rem 1rem;
+	grid-template-rows: 21rem 21rem;
+	gap: 2rem 2rem;
 }
 
 .grid-item {
-	outline: 1px red dashed;
+	/* outline: 1px red dashed; */
+	background-color: var(--dark3);
+	border-radius: var(--border-radius);
+	box-shadow: var(--border-radius);
 }
 
 .grid-item img {
