@@ -323,21 +323,33 @@ section>* {
 .contact-grid {
 	display: grid;
 	grid-template-columns: 1fr 3fr;
-	grid-template-rows: 21rem 21rem;
+	grid-template-rows: 21rem 21rem 21rem;
 	gap: 2rem 2rem;
 }
 
 .grid-item {
 	/* outline: 1px red dashed; */
+	position: relative;
 	background-color: var(--dark3);
 	border-radius: var(--border-radius);
 	box-shadow: var(--border-radius);
-}
+	overflow: hidden;
 
-.grid-item img {
-	width: 100%;
-	height: 100%;
-	object-fit: contain;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+
+	#grid-portrait {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		height: auto;
+		object-fit: fill;
+	}
 }
 
 /* smaller screens */
