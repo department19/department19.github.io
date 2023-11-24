@@ -6,16 +6,15 @@
   <style>
     .grid-container {
       display: grid;
-      grid-template-columns: 2fr 1fr;
       gap: 10px;
-    }
-
-    .grid-item:nth-child(3n) {
-      grid-column: span 2;
     }
 
     .grid-item {
       height: 100px; /* Set your desired height */
+    }
+
+    .grid-item:nth-child(odd) {
+      grid-column: span 2;
     }
   </style>
 </head>
@@ -25,11 +24,4 @@
     <div class="grid-item" style="background-color: #99ff99;"></div>
     <div class="grid-item" style="background-color: #99ccff;"></div>
     <div class="grid-item" style="background-color: #ffcc99;"></div>
-    <div class="grid-item" style="background-color: #ff9999;"></div>
-    <div class="grid-item" style="background-color: #99ff99;"></div>
-    <div class="grid-item" style="background-color: #99ccff;"></div>
-    <div class="grid-item" style="background-color: #ffcc99;"></div>
-    <!-- Add more items as needed -->
-  </div>
-</body>
-</html>
+    <!-- Add more items as

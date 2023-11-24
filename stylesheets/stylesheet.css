@@ -212,14 +212,14 @@ section>* {
 	-webkit-mask: linear-gradient(
 		90deg,
 		transparent,
-		white 10%,
-		white 90%,
+		white 20%,
+		white 80%,
 		transparent);
 	mask: linear-gradient(
 		90deg,
 		transparent,
-		white 10%,
-		white 90%,
+		white 20%,
+		white 80%,
 		transparent
 	);
 }
@@ -384,6 +384,23 @@ section>* {
 
 	.card {
 		/* height: 42rem; */
+	}
+
+	.scroller[scroll-animate=true] {
+		overflow: hidden;
+		-webkit-mask: linear-gradient(
+			90deg,
+			transparent,
+			white 10%,
+			white 90%,
+			transparent);
+		mask: linear-gradient(
+			90deg,
+			transparent,
+			white 10%,
+			white 90%,
+			transparent
+		);
 	}
 }
 
