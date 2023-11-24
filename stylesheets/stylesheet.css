@@ -385,6 +385,10 @@ section>* {
 	.card {
 		/* height: 42rem; */
 	}
+
+	.contact-grid {
+		grid-template-rows: repeat(3, 20rem);
+	}
 }
 
 @media (max-width: 1100px) {
