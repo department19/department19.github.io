@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .grid-container {
+      display: grid;
+      gap: 10px;
+    }
+
+    .grid-item {
+      height: 100px; /* Set your desired height */
+    }
+
+    .grid-item:nth-child(odd) {
+      grid-column: span 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item" style="background-color: #ff9999;"></div>
+    <div class="grid-item" style="background-color: #99ff99;"></div>
+    <div class="grid-item" style="background-color: #99ccff;"></div>
+    <div class="grid-item" style="background-color: #ffcc99;"></div>
+    <!-- Add more items as
