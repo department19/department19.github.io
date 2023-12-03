@@ -36,18 +36,29 @@ short description here?
 - The overflow of the sections on smaller than 1080p screen sizes results in bleeding of the content on to the adjacent ones. need to consider using at @media rules or maybe even JS to determine the screen size then adjust content size accordingly
 - nav bar needs a reposition to be able to be used on phones
 
-
 ## Bugs
 - magical anchor elements appearing in chrome for the project cards
 - the text in the about me overflow the section on some phones, and for others trying to scroll to read the text triggers the scroll snap.
 
 ## Development Log
+- [Contact grid](#contact-grid)
 - [Responsiveness](#responsiveness-adjustments)
 - [Landing Page](#landing-page)
 - [Navigation bar](#navigation-bar)
 - [Animate on scroll](#animate-on-scroll)
 - [Project cards](#project-cards)
 - [Scroll snapping](#scroll-snapping)
+
+### Contact grid
+
+#### 0.2
+I found out that I
+
+#### 0.1
+I knew nothing about CSS grid as I mostly rely on flex box to do similar layout designs. But felt it was a perfect moment to learn grid for this specific element.
+The `grid-template` properties made sense on how to create tracks for physical elements to fall into upon which using fr units would mean that the track area would adjust very easily with different screen sizes and changing of the window size.
+As for the physical elements I was able to adjust them to the sizes I want them to be; 2 tiles per row, one tile is 1fr wide and the other being 3 fr
+they are the same order each row which is not what I wanted but rather to alternate them
 
 ### Responsiveness adjustments
 #### 0.1
