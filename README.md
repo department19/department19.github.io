@@ -34,10 +34,12 @@ short description here?
 - A vanilla JS scrollspy function for webpage navigation
 ## Responsiveness considerations
 - The overflow of the sections on smaller than 1080p screen sizes results in bleeding of the content on to the adjacent ones. need to consider using at @media rules or maybe even JS to determine the screen size then adjust content size accordingly
-- nav bar needs a reposition to be able to be used on phones
+- nav bar needs a reposition to be able to be used on phones?
+- Contact grid is probably a mess right now with phone screens
 
 ## Bugs
-- magical anchor elements appearing in chrome for the project cards
+- ~~magical anchor elements appearing in chrome for the project cards~~
+	- currently by passed but only having anchors on buttons
 - the text in the about me overflow the section on some phones, and for others trying to scroll to read the text triggers the scroll snap.
 
 ## Development Log
@@ -52,13 +54,14 @@ short description here?
 ### Contact grid
 
 #### 0.2
-I found out that I
+After researching, trying some solutions offered by chatgpt to no avail. The only solution i could find was to target each grid item using the `:nth-of-type` selector, and then individually adjusting the `grid-column` property to for each of those items.
+The problem is that this is essentially hard coded which means it is clunky and results in alot of repeat code. but it works so it will just have be be deployed as is until I can find a better solution in future as i learn CSS grid better.
+One concern I have with it right now is the responsiveness of the physical elements in the grid at the moment, since the grid tracks do adjust with the window size, but it means with very small screens like on phones the tiles become tiny width ways and the content within the tiles deform or don't properly fill the tiles. I believe I need to consider using the `minmax()` property within the grid template to control the tracks. 
 
 #### 0.1
-I knew nothing about CSS grid as I mostly rely on flex box to do similar layout designs. But felt it was a perfect moment to learn grid for this specific element.
+I knew nothing about CSS grid as I mostly rely on flex box to do similar layout designs. But felt it was a perfect moment to learn grid for this specific component.
 The `grid-template` properties made sense on how to create tracks for physical elements to fall into upon which using fr units would mean that the track area would adjust very easily with different screen sizes and changing of the window size.
-As for the physical elements I was able to adjust them to the sizes I want them to be; 2 tiles per row, one tile is 1fr wide and the other being 3 fr
-they are the same order each row which is not what I wanted but rather to alternate them
+As for the physical elements I was able to adjust them to the sizes I want them to be; 2 tiles per row, one tile is 1fr wide and the other being 3 but they are the in the same order each row which is not what I wanted but rather to alternate the order of the pairs with every row.
 
 ### Responsiveness adjustments
 #### 0.1
