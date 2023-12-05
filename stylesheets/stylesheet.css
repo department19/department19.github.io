@@ -328,57 +328,57 @@ section>* {
 	gap: 2rem 2rem;
 	height: 60vw;
 	max-height: 70vh;
+}
 
-	.grid-item {
-		/* outline: 1px red dashed; */
-		position: relative;
-		background-color: var(--dark3);
-		border-radius: var(--border-radius);
-		box-shadow: var(--border-radius);
-		overflow: hidden;
-		height: 1fr;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+.grid-item {
+	/* outline: 1px red dashed; */
+	position: relative;
+	background-color: var(--dark3);
+	border-radius: var(--border-radius);
+	box-shadow: var(--border-radius);
+	overflow: hidden;
+	height: 1fr;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 
-		p {
-			margin-left: 1rem;
-		}
-		
-		img {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			/* max-height: 100%; */
-		}
-		
-		#grid-portrait {
-			width: 140%;
-			height: auto;
-			object-fit: fill;
-		}
+p {
+	margin-left: 1rem;
+}
 
-		#github-icon {
-			width: auto;
-			height: 50%;
-			object-fit: contain;
-		}
+.grid-item > img, a > img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* max-height: 100%; */
+}
 
-		#linkedin {
-			width: 40%;
-			height: auto;
-			object-fit: contain;
-		}
-	}
+#grid-portrait {
+	width: 120%;
+	height: auto;
+	object-fit: contain;
+}
 
-	.grid-item:nth-of-type(2), .grid-item:nth-of-type(6) {
-		grid-column: 2 / 5;
-	}
+#github-icon {
+	width: auto;
+	height: 50%;
+	object-fit: contain;
+}
 
-	.grid-item:nth-of-type(3) {
-		grid-column: 1 / 4;
-	}
+#linkedin {
+	width: 40%;
+	height: auto;
+	object-fit: contain;
+}
+
+.grid-item:nth-of-type(2), .grid-item:nth-of-type(6) {
+	grid-column: 2 / 5;
+}
+
+.grid-item:nth-of-type(3) {
+	grid-column: 1 / 4;
 }
 
 .flex {
