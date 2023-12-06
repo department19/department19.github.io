@@ -86,12 +86,14 @@ document.addEventListener("DOMContentLoaded", function() {
       const projectCardBox = element.querySelector(".project-card-box");
       const projectCard = Array.from(projectCardBox.children);
       //  the array from stops the any updates in the DOM do not affect this array
-      projectCard.forEach((element) => {
-        const clonedElement = element.cloneNode(true);
-        clonedElement.setAttribute("aria-hidden", true);
-        // this prevents the content from showing up for a screen reader
-        projectCardBox.appendChild(clonedElement);
-      });
+      for (let i = 0; i < 2; i++) {
+        projectCard.forEach((element) => {
+          const clonedElement = element.cloneNode(true);
+          clonedElement.setAttribute("aria-hidden", true);
+          // this prevents the content from showing up for a screen reader
+          projectCardBox.appendChild(clonedElement);
+        });
+      }
     });
   }
 });
