@@ -227,7 +227,7 @@ section>* {
 [scroll-animate=true] .project-card-box {
 	width: max-content;
 	flex-wrap: nowrap;
-	animation: infinite-scroll 10s linear infinite;
+	animation: infinite-scroll 40s linear infinite;
 }
 
 @keyframes infinite-scroll {
