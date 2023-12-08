@@ -374,7 +374,7 @@ p {
 	object-fit: contain;
 }
 
-#fcc-logo {
+#fcc-logo, #discord-logo {
 	width: auto;
 	height: 50%;
 	left: 8%;
