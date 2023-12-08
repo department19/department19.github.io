@@ -376,8 +376,8 @@ p {
 
 #fcc-logo {
 	width: auto;
-	height: 90%;
-	left: 1rem;
+	height: 50%;
+	left: 8%;
 	top: 50%;
 	transform: translate(0, -50%);
 }
