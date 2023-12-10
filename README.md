@@ -28,10 +28,17 @@ short description here?
 
 ### JS Elements
 - toggling for navigation bar/panel and animation
-- toggle for theme toggling
-- tracking for animation on scroll - partial
+- tracking for animation on scroll
+- Infinite scrolling carousel of the project cards
+	- this is currently being used to hide problematic flexbox bugs 😅
 - tracking for mouse hover for card animation in the project and contact sections
 - A vanilla JS scrollspy function for webpage navigation
+
+## Features to implement in future
+- toggles for theme changing
+	- maybe an additional "glassify" toggle
+- tile icons to blur and and show text of tech name
+
 ## Responsiveness considerations
 - The overflow of the sections on smaller than 1080p screen sizes results in bleeding of the content on to the adjacent ones. need to consider using at @media rules or maybe even JS to determine the screen size then adjust content size accordingly
 - nav bar needs a reposition to be able to be used on phones?
