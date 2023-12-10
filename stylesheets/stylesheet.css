@@ -324,7 +324,7 @@ section>* {
 .contact-grid {
 	display: grid;
 	/* grid: auto-flow; */
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: minmax(18rem, 1fr) 1fr 1fr minmax(18rem, 1fr);
 	grid-template-rows: repeat(3, 1fr);
 	gap: 2rem 2rem;
 	height: 60vw;
