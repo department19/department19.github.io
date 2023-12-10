@@ -41,8 +41,11 @@ short description here?
 - ~~magical anchor elements appearing in chrome for the project cards~~
 	- currently by passed but only having anchors on buttons
 - the text in the about me overflow the section on some phones, and for others trying to scroll to read the text triggers the scroll snap.
+- ~~nav bar links will not won't scroll on click~~
+	- needed to change the `z-index` to have the nav bar at the front, 
 
 ## Development Log
+- [Nesting nightmare 😨](#css-nesting-nightmare)
 - [Contact grid](#contact-grid)
 - [Responsiveness](#responsiveness-adjustments)
 - [Landing Page](#landing-page)
@@ -51,7 +54,16 @@ short description here?
 - [Project cards](#project-cards)
 - [Scroll snapping](#scroll-snapping)
 
+### CSS nesting nightmare 😅
+After reading up about the new CSS nesting features that were rolled out recently, I was eager to try them. At this point I had started to use Firefox alot more to inspect my web development. One thing I forgot to check for with new features like this is how widely supported it is, and much to my horror, Chrome hadn't put in it's support yet. Meaning that none of the CSS for the contact grid and new adjustments for the buttons and project tiles were working on chromium based browsers. A slow and pain staking process of scrolling through the stylesheet to move all the nested child selectors and correctly path them was due.
+
 ### Contact grid
+#### 0.3
+- Added `minmax()` to the end grid columns to ensure the image boxes don't squish too narrow when the window is collapsed widthways
+- added more content to the grid
+	- icons with anchors
+	- freeCodeCamp certifications
+- An adjustment for mobiles is still very much needed
 
 #### 0.2
 After researching, trying some solutions offered by chatgpt to no avail. The only solution i could find was to target each grid item using the `:nth-of-type` selector, and then individually adjusting the `grid-column` property to for each of those items.
