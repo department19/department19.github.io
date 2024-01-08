@@ -42,7 +42,7 @@ short description here?
 ## Responsiveness considerations
 - The overflow of the sections on smaller than 1080p screen sizes results in bleeding of the content on to the adjacent ones. need to consider using at @media rules or maybe even JS to determine the screen size then adjust content size accordingly
 - nav bar needs a reposition to be able to be used on phones?
-- Contact grid is probably a mess right now with phone screens
+- Contact grid is probably a mess right now with phone screens and smaller screens
 
 ## Bugs
 - ~~magical anchor elements appearing in chrome for the project cards~~
