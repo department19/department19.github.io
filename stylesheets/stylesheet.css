@@ -63,6 +63,7 @@ h3 {
 	font-size: 2rem;
 	font-family: Lato;
 	color: var(--dark50);
+	margin: 3rem 0 1rem;
 }
 
 p {
@@ -141,7 +142,7 @@ section>* {
 	z-index: -1;
 }
 
-#icon-tile-box {
+.icon-tile-box {
 	margin-top: 1rem;
 	display: flex;
 	width: 45%;
@@ -209,19 +210,16 @@ section>* {
 
 .scroller[scroll-animate=true] {
 	overflow: hidden;
-	-webkit-mask: linear-gradient(
-		90deg,
-		transparent,
-		white 20%,
-		white 80%,
-		transparent);
-	mask: linear-gradient(
-		90deg,
-		transparent,
-		white 20%,
-		white 80%,
-		transparent
-	);
+	-webkit-mask: linear-gradient(90deg,
+			transparent,
+			white 20%,
+			white 80%,
+			transparent);
+	mask: linear-gradient(90deg,
+			transparent,
+			white 20%,
+			white 80%,
+			transparent);
 }
 
 [scroll-animate=true] .project-card-box {
@@ -311,7 +309,7 @@ section>* {
 	text-decoration: none;
 	border-radius: var(--border-radius);
 	transition: 0.3s ease-in-out;
-	
+
 }
 
 .btn:hover {
@@ -348,7 +346,8 @@ p {
 	margin-left: 1rem;
 }
 
-.grid-item > img, a > img {
+.grid-item>img,
+a>img {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -374,7 +373,8 @@ p {
 	object-fit: contain;
 }
 
-#fcc-logo, #discord-logo {
+#fcc-logo,
+#discord-logo {
 	width: auto;
 	height: 50%;
 	left: 8%;
@@ -382,7 +382,8 @@ p {
 	transform: translate(0, -50%);
 }
 
-.grid-item:nth-of-type(2), .grid-item:nth-of-type(6) {
+.grid-item:nth-of-type(2),
+.grid-item:nth-of-type(6) {
 	grid-column: 2 / 5;
 }
 
@@ -425,19 +426,16 @@ p {
 
 	.scroller[scroll-animate=true] {
 		overflow: hidden;
-		-webkit-mask: linear-gradient(
-			90deg,
-			transparent,
-			white 10%,
-			white 90%,
-			transparent);
-		mask: linear-gradient(
-			90deg,
-			transparent,
-			white 10%,
-			white 90%,
-			transparent
-		);
+		-webkit-mask: linear-gradient(90deg,
+				transparent,
+				white 10%,
+				white 90%,
+				transparent);
+		mask: linear-gradient(90deg,
+				transparent,
+				white 10%,
+				white 90%,
+				transparent);
 	}
 }
 
@@ -469,6 +467,7 @@ p {
 
 	h3 {
 		font-size: 3rem;
+		margin: 1rem;
 		margin-bottom: 1rem;
 	}
 
@@ -516,7 +515,7 @@ p {
 		opacity: 1;
 	}
 
-	#icon-tile-box {
+	.icon-tile-box {
 		width: 100%;
 	}
 
